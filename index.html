@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JD</title>
+    <title>TechShop</title>
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="#">JD</a>
+                <a href="#">TechShop</a>
             </div>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
@@ -21,8 +21,7 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
             <div class="nav-icons">
-                <a href="#"><i class="fas fa-search"></i></a>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                
                 <div class="hamburger">
                     <span></span>
                     <span></span>
@@ -40,45 +39,99 @@
             <a href="#productos" class="btn">Ver Productos</a>
         </div>
     </section>
-
+    <!-- Nueva Sección: Mejores Productos -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Nuestros Mejores Productos</h2>
+            <p class="subtitle">Los equipos más vendidos y mejor valorados por nuestros clientes</p>
+            
+            <div class="featured-grid">
+                <!-- Producto Destacado 1 -->
+                <div class="featured-card">
+                    <div class="badge">Más Vendido</div>
+                    <img src="/gaming lap.jpg" alt="Laptop Top">
+                    <div class="featured-info">
+                        <h3>Laptop Gamer Elite</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(128)</span>
+                        </div>
+                        <p class="specs">Intel i9, 32GB RAM, RTX 3080, 2TB SSD</p>
+                        <div class="price-container">
+                            <p class="price">$2,499.99</p>
+                            <p class="old-price">$2,799.99</p>
+                        </div>
+                        <!-- <button class="btn featured-btn">Comprar ahora</button> -->
+                    </div>
+                </div>
+                
+                <!-- Producto Destacado 2 -->
+                <div class="featured-card">
+                    <div class="badge">Mejor Valorado</div>
+                    <img src="/workstation.png" alt="Workstation Top">
+                    <div class="featured-info">
+                        <h3>Workstation Pro</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(96)</span>
+                        </div>
+                        <p class="specs">AMD Threadripper, 64GB RAM, RTX 3090, 4TB SSD</p>
+                        <div class="price-container">
+                            <p class="price">$3,299.99</p>
+                            <p class="old-price">$3,599.99</p>
+                        </div>
+                        <!-- <button class="btn featured-btn">Comprar ahora</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Sección de Productos -->
     <section class="products" id="productos">
         <h2>Nuestros Productos</h2>
         <div class="product-grid">
             <!-- Producto 1 -->
             <div class="product-card">
-                <img src="https://via.placeholder.com/300x200?text=Laptop+Gamer" alt="Laptop Gamer">
+                <img src="/laptop.jpg" alt="Laptop Gamer">
                 <h3>Laptop Gamer Pro</h3>
                 <p class="specs">Intel i7, 16GB RAM, RTX 3060, 1TB SSD</p>
                 <p class="price">$1,299.99</p>
-                <button class="btn">Añadir al carrito</button>
+                <!-- <button class="btn">Añadir al carrito</button> -->
             </div>
             
             <!-- Producto 2 -->
             <div class="product-card">
-                <img src="https://via.placeholder.com/300x200?text=PC+Escritorio" alt="PC de Escritorio">
+                <img src="/workstation.png" alt="PC de Escritorio">
                 <h3>PC Workstation</h3>
                 <p class="specs">AMD Ryzen 9, 32GB RAM, RTX 3080, 2TB SSD</p>
                 <p class="price">$2,199.99</p>
-                <button class="btn">Añadir al carrito</button>
+                <!-- <button class="btn">Añadir al carrito</button> -->
             </div>
             
             <!-- Producto 3 -->
             <div class="product-card">
-                <img src="https://via.placeholder.com/300x200?text=Laptop+Ultradelgada" alt="Laptop Ultradelgada">
+                <img src="/HP-ELITEBOOK-840-G10.jpg" alt="Laptop Ultradelgada">
                 <h3>Ultrabook Elite</h3>
                 <p class="specs">Intel i5, 8GB RAM, 512GB SSD, 14" FHD</p>
                 <p class="price">$899.99</p>
-                <button class="btn">Añadir al carrito</button>
+                <!-- <button class="btn">Añadir al carrito</button> -->
             </div>
             
             <!-- Producto 4 -->
             <div class="product-card">
-                <img src="https://via.placeholder.com/300x200?text=All-in-One" alt="All-in-One">
+                <img src="/HP-AIO-PROONE-440-G9.jpg" alt="All-in-One">
                 <h3>All-in-One Pro</h3>
                 <p class="specs">Intel i5, 16GB RAM, 1TB HDD, 24" FHD</p>
                 <p class="price">$799.99</p>
-                <button class="btn">Añadir al carrito</button>
+                <!-- <button class="btn">Añadir al carrito</button> -->
             </div>
         </div>
     </section>
