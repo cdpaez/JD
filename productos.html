@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">TechShop</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-icons">
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- seccion productos -->
+    <section class="products" id="productos">
+        <h2>Nuestros Productos</h2>
+        
+        <!-- Cuadro de búsqueda y filtros -->
+        <div class="search-filter-container">
+            <!-- Barra de búsqueda -->
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Buscar productos...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <!-- Filtros -->
+            <div class="filter-section">
+                <div class="filter-group">
+                    <h3>Precio</h3>
+                    <div class="filter-options">
+                        <label>
+                            <input type="checkbox" name="price" value="0-500"> Menos de $500
+                        </label>
+                        <label>
+                            <input type="checkbox" name="price" value="500-1000"> $500 - $1000
+                        </label>
+                        <label>
+                            <input type="checkbox" name="price" value="1000-1500"> $1000 - $1500
+                        </label>
+                        <label>
+                            <input type="checkbox" name="price" value="1500-9999"> Más de $1500
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Marca</h3>
+                    <div class="filter-options">
+                        <label>
+                            <input type="checkbox" name="brand" value="HP"> HP
+                        </label>
+                        <label>
+                            <input type="checkbox" name="brand" value="Dell"> Dell
+                        </label>
+                        <label>
+                            <input type="checkbox" name="brand" value="Lenovo"> Lenovo
+                        </label>
+                        <label>
+                            <input type="checkbox" name="brand" value="Asus"> Asus
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Procesador</h3>
+                    <div class="filter-options">
+                        <label>
+                            <input type="checkbox" name="processor" value="Intel i5"> Intel i5
+                        </label>
+                        <label>
+                            <input type="checkbox" name="processor" value="Intel i7"> Intel i7
+                        </label>
+                        <label>
+                            <input type="checkbox" name="processor" value="Intel i9"> Intel i9
+                        </label>
+                        <label>
+                            <input type="checkbox" name="processor" value="Ryzen"> AMD Ryzen
+                        </label>
+                    </div>
+                </div>
+                
+                <button id="reset-filters" class="btn">Limpiar filtros</button>
+            </div>
+        </div>
+        
+        <!-- Product Grid (actualizado con data attributes para filtrado) -->
+        <div class="product-grid">
+            <!-- Producto 1 -->
+            <div class="product-card" data-price="1299.99" data-brand="Asus" data-processor="Intel i7">
+                <img src="/laptop.jpg" alt="Laptop Gamer">
+                <h3>Laptop Gamer Pro</h3>
+                <p class="specs">Intel i7, 16GB RAM, RTX 3060, 1TB SSD</p>
+                <p class="price">$1,299.99</p>
+            </div>
+            
+            <!-- Producto 2 -->
+            <div class="product-card" data-price="2199.99" data-brand="HP" data-processor="AMD Ryzen">
+                <img src="/workstation.png" alt="PC de Escritorio">
+                <h3>PC Workstation</h3>
+                <p class="specs">AMD Ryzen 9, 32GB RAM, RTX 3080, 2TB SSD</p>
+                <p class="price">$2,199.99</p>
+            </div>
+            
+            <!-- Producto 3 -->
+            <div class="product-card" data-price="899.99" data-brand="HP" data-processor="Intel i5">
+                <img src="/HP-ELITEBOOK-840-G10.jpg" alt="Laptop Ultradelgada">
+                <h3>Ultrabook Elite</h3>
+                <p class="specs">Intel i5, 8GB RAM, 512GB SSD, 14" FHD</p>
+                <p class="price">$899.99</p>
+            </div>
+            
+            <!-- Producto 4 -->
+            <div class="product-card" data-price="799.99" data-brand="Dell" data-processor="Intel i5">
+                <img src="/HP-AIO-PROONE-440-G9.jpg" alt="All-in-One">
+                <h3>All-in-One Pro</h3>
+                <p class="specs">Intel i5, 16GB RAM, 1TB HDD, 24" FHD</p>
+                <p class="price">$799.99</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>TechShop</h3>
+                <p>Tu tienda de confianza para equipos de computación de última generación.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad</p>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> info@techshop.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 JD. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
