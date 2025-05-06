@@ -1,0 +1,14 @@
+.
+├── estructura-backend.txt
+├── gaming lap.jpg
+├── HP-AIO-PROONE-440-G9.jpg
+├── HP-ELITEBOOK-840-G10.jpg
+├── index.html
+├── laptop.jpg
+├── productos.html
+├── script.js
+├── styles.css
+├── workstation.png
+└── wrkst.png
+
+0 directories, 11 files

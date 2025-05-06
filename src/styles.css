@@ -105,8 +105,8 @@ a {
 /* Hero Section */
 .hero {
   height: 80vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-              url('https://via.placeholder.com/1920x1080?text=TechShop') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,6 +124,7 @@ a {
   font-size: 1.2rem;
   margin-bottom: 30px;
 }
+
 /* Nueva Sección: Featured Products */
 .featured-products {
   padding: 5rem 5%;
@@ -168,6 +169,7 @@ a {
   width: 100%;
   height: 500px;
   object-fit: cover;
+  padding: 2em;
 }
 
 .badge {
@@ -242,26 +244,7 @@ a {
   background: #0052a3;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .featured-grid {
-      grid-template-columns: 1fr;
-  }
-  
-  .featured-card img {
-      height: 200px;
-  }
-}
 
-@media (max-width: 576px) {
-  .featured-products h2 {
-      font-size: 2rem;
-  }
-  
-  .featured-products .subtitle {
-      font-size: 1rem;
-  }
-}
 /* Products Section */
 .products {
   padding: 5rem 5%;
@@ -277,10 +260,15 @@ a {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-content: center;
+  align-content: center;
   gap: 2rem;
 }
 
 .product-card {
+  width: 100%;
+  min-width: 400px;
+  max-width: 800px;
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -294,8 +282,9 @@ a {
 
 .product-card img {
   width: 100%;
-  height: 500px;
+  height: auto;
   object-fit: cover;
+  padding: 2em;
 }
 
 .product-card h3 {
@@ -322,6 +311,7 @@ a {
   padding: 8px 15px;
   font-size: 0.9rem;
 }
+
 .search-filter-container {
   max-width: 1200px;
   margin: 0 auto 30px;
@@ -409,11 +399,6 @@ a {
   display: none;
 }
 
-@media (max-width: 768px) {
-  .filter-section {
-      grid-template-columns: 1fr;
-  }
-}
 /* Offers Section */
 .offers {
   padding: 0 5% 5rem;
@@ -514,69 +499,91 @@ a {
 }
 
 /* Responsive Design */
-@media (max-width: 992px) {
-  .hero-content h1 {
-      font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .hamburger {
-      display: flex;
-  }
-  
-  .nav-links {
-      position: fixed;
-      top: 70px;
-      left: -100%;
-      width: 100%;
-      height: calc(100vh - 70px);
-      background: #fff;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem 0;
-      transition: left 0.3s;
-  }
-  
-  .nav-links.active {
-      left: 0;
-  }
-  
-  .nav-links li {
-      margin: 15px 0;
-  }
-  
-  .hero-content h1 {
-      font-size: 2rem;
-  }
-  
-  .hero-content p {
-      font-size: 1rem;
-  }
-  
-  .products h2, .offers h2 {
-      font-size: 2rem;
-  }
-}
 
 @media (max-width: 576px) {
   .hero {
-      height: 70vh;
+    height: 70vh;
   }
-  
+
   .hero-content h1 {
-      font-size: 1.8rem;
+    font-size: 1.8rem;
   }
-  
+
   .offer-banner {
-      padding: 2rem 1rem;
+    padding: 2rem 1rem;
   }
-  
+
   .offer-content h3 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
-  
+
   .offer-content p {
-      font-size: 1rem;
+    font-size: 1rem;
+  }
+  .featured-products h2 {
+    font-size: 2rem;
+  }
+
+  .featured-products .subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-section {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-card img {
+    height: 200px;
+  }
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    transition: left 0.3s;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .products h2,
+  .offers h2 {
+    font-size: 2rem;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
   }
 }
