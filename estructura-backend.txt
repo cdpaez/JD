@@ -1,0 +1,14 @@
+.
+├── images
+│   ├── gaming lap.jpg
+│   ├── HP-AIO-PROONE-440-G9.jpg
+│   ├── HP-ELITEBOOK-840-G10.jpg
+│   ├── laptop.jpg
+│   ├── workstation.png
+│   └── wrkst.png
+├── index.html
+├── productos.html
+├── script.js
+└── styles.css
+
+1 directory, 10 files
