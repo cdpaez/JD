@@ -46,10 +46,9 @@ a {
   z-index: 1000;
 }
 
-.logo a {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #e22908;
+.logo img {
+  width: 100%;
+  max-width: 100px;
 }
 
 .nav-links {
