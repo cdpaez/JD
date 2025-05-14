@@ -19,7 +19,7 @@ a {
 
 .btn {
   display: inline-block;
-  background: #0066cc;
+  background: #e22908;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -29,7 +29,7 @@ a {
 }
 
 .btn:hover {
-  background: #0052a3;
+  background: black;
   transform: translateY(-2px);
 }
 
@@ -49,7 +49,7 @@ a {
 .logo a {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #0066cc;
+  color: #e22908;
 }
 
 .nav-links {
@@ -67,7 +67,7 @@ a {
 }
 
 .nav-links a:hover {
-  color: #0066cc;
+  color: #e22908;
 }
 
 .nav-icons {
@@ -135,7 +135,7 @@ a {
 .featured-products h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #0066cc;
+  color: #e22908;
 }
 
 .featured-products .subtitle {
@@ -218,7 +218,7 @@ a {
 .price {
   font-weight: bold;
   font-size: 1.5rem;
-  color: #0066cc;
+  color: #e22908;
   margin-right: 15px;
 }
 
@@ -302,7 +302,7 @@ a {
 .product-card .price {
   font-weight: bold;
   font-size: 1.3rem;
-  color: #0066cc;
+  color: #e22908;
   margin-bottom: 15px;
 }
 
@@ -336,7 +336,7 @@ a {
 
 .search-box button {
   padding: 0 20px;
-  background: #0066cc;
+  background: #e22908;
   color: white;
   border: none;
   border-radius: 0 5px 5px 0;
@@ -345,7 +345,7 @@ a {
 }
 
 .search-box button:hover {
-  background: #0052a3;
+  background: black;
 }
 
 .filter-section {
@@ -412,7 +412,7 @@ a {
 }
 
 .offer-banner {
-  background: linear-gradient(135deg, #0066cc, #004d99);
+  background: linear-gradient(135deg, #e22908, black);
   color: #fff;
   border-radius: 10px;
   padding: 3rem;
@@ -446,7 +446,7 @@ a {
 .footer-section h3 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #0066cc;
+  color: #e22908;
 }
 
 .footer-section.about p {
@@ -461,7 +461,7 @@ a {
 }
 
 .socials a:hover {
-  color: #0066cc;
+  color: #e22908;
 }
 
 .footer-section.links ul {
@@ -477,7 +477,7 @@ a {
 }
 
 .footer-section.links a:hover {
-  color: #0066cc;
+  color: #e22908;
 }
 
 .footer-section.contact p {
@@ -488,7 +488,7 @@ a {
 
 .footer-section.contact i {
   margin-right: 10px;
-  color: #0066cc;
+  color: #e22908;
 }
 
 .footer-bottom {
